@@ -1,0 +1,107 @@
+Google search page :
+
+query input
+//input[@id='lst-ib']
+input#lst-ib
+
+‘search in Google’ button
+//input[@name='btnK']
+input[name='btnK']
+
+“I am lucky!’ button
+//input[@name='btnI']
+input[name='btnI']
+
+Search for “nyan cat” and create a locator that returns ALL 10 result links (see screenshot)
+//h3[@class='r']/a | //div[contains(@class, '_Icb')]/a
+h3.r > a, div._Icb > a
+
+n-th ‘o’ letter in Goooooooooogle   (n = 1...10)
+//table[@id='nav']//td[7]//span
+table#nav td:nth-child(7) span
+
+
+Mail.ru login page:	
+
+login input
+//input[@id='mailbox__login']
+input#mailbox__login
+
+password input
+//input[@id='mailbox__password']
+input#mailbox__password
+
+‘Enter’ button
+//input[@id='mailbox__auth__button']
+input#mailbox__auth__button
+
+
+Mail.ru main page (logged in):
+
+links to folders (incoming, 
+//a[contains(@class, 'b-nav__link') and contains(@href, 'inbox')]
+a.b-nav__link[href='/messages/inbox/']
+
+outcoming, 
+//a[contains(@class, 'b-nav__link') and contains(@href, 'sent')]
+a.b-nav__link[href='/messages/sent/']
+
+spam, 
+//a[contains(@class, 'b-nav__link') and contains(@href, 'spam')]
+a.b-nav__link[href='/messages/spam/']
+
+deleted, 
+//a[contains(@class, 'b-nav__link') and contains(@href, 'trash')]
+a.b-nav__link[href='/messages/trash/']
+
+drafts)
+//a[contains(@class, 'b-nav__link') and contains(@href, 'drafts')]
+a.b-nav__link[href='/messages/drafts/']
+
+action buttons (write new letter, 
+//a[@data-name='compose']
+a[data-name='compose']
+
+delete, 
+//div[@data-name='remove']
+div[data-name='remove']
+
+mark as spam, 
+//div[@data-name='spam']
+div[data-name='spam']
+
+mark as not spam, 
+//div[@data-name='noSpam']
+div[data-name='noSpam']
+
+mark as read, 
+//a[@data-name='read']
+a[data-name='read']
+
+move to another folder)
+//div[contains(@class, 'b-dropdown_moveTo')]/div[contains(@class, 'b-dropdown__ctrl')]
+div.b-dropdown_moveTo > div.b-dropdown__ctrl
+
+Checkbox for one exact letter
+//div[contains(@class, 'b-datalist__item') and @data-id='14741238600000000432']//div[@class='b-checkbox__box']
+div.b-datalist__item[data-id='14741238600000000432'] div.b-checkbox__box
+
+Opening link for one exact letter
+//div[contains(@class, 'b-datalist__item') and @data-id='14741238600000000432']//a
+div.b-datalist__item[data-id='14741238600000000432'] a
+
+New letter page: inputs for address, 
+//textarea[@data-original-name='To']
+textarea[data-original-name='To']
+
+topic, 
+//input[@name='Subject']
+input[name='Subject']
+
+text, 
+//body[@id='tinymce')]
+body#tinymce
+
+file attach
+//input[@name='Filedata']
+input[name='Filedata']
