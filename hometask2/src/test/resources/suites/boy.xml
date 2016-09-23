@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Boy suite">
+    <listeners>
+        <listener class-name="TestListener"/>
+    </listeners>
+    <test name="Boy spend some money methods test" parallel="methods" thread-count="2">
+        <groups>
+            <run>
+                <include name="spendSomeMoney"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="BoyTest"/>
+        </classes>
+    </test>
+</suite>
