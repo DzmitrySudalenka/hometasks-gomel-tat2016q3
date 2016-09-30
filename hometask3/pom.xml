@@ -5,8 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.epam.gomel.tat</groupId>
-    <artifactId>hometask3</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <artifactId>gomel-tat2016q3-demo</artifactId>
+    <version>1.2</version>
 
     <properties>
         <java.version>1.8</java.version>
@@ -19,7 +19,7 @@
     </properties>
 
     <build>
-        <finalName>hometask3</finalName>
+        <finalName>demo</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
